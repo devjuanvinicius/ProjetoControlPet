@@ -27,7 +27,7 @@ Na aplicação o petshop terá total controle de entrada e saída dos pets, tend
 No ControlPet o cliente poderá cadastrar seu bichinho, selecionar qual deseja e contratar o serviço. Dentro da aplicação ele terá como contratar 3 serviços, sendo eles: 
 * Banho
 * Tosa
-* Banho e osa
+* Banho e tosa
 
 Ele conseguirá também visualizar todas as informações de pós-vendas, tanto do seu pet, quanto do petshop. Aqui na parte de informações do petshop utilizamos um embed do Google maps para o cliente localizar de forma mais fácil do endereço. 
 

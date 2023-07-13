@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 100%;
+  background-color: #171418;
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo{
+  width: 320px;
+  height: 80px;
+}
+
+.card-login{
+  width: 550px;
+  height: 500px;
+  background-color: #ED6515;
+  border-radius: 30px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  color: #F9F8F9;
+}
+
+
+.card-login h2{
+  margin: 50px;
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+}
+
+.formulario{
+  margin-top: 20px;
+}
+
+.box-input{
+  position: relative;
+}
+
+.box-input input{
+  width: 470px;
+  padding: 10px 0;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #eae2b7;
+  color: #F9F8F9;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.box-input label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.box-input input:focus~label,
+.box-input input:valid~label{
+  top: -20px;
+  left: 0;
+  color: #EAE2B7;
+  font-size: .8rem;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-top: 40px;
+}
+
+.btn-link button{
+  height: 40px;
+  width: 300px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  outline: 0;
+  border: none;
+  border-radius: 15px;
+  background-color: #432818;
+  color: #EAE2B7;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+
+@media (min-width: 425px) and (max-width: 650px){
+  .card-login{
+    width: 370px;
+    height: 450px;
+  }
+
+  .card-login p{
+    margin-top: 180px;
+  }
+
+  .box-input input{
+    width: 300px;
+  }
+
+  .logo{
+    width: 280px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 424px){
+  .card-login{
+    width: 350px;
+    height: 430px;
+  }
+
+  .card-login h2{
+    margin-top: 35px;
+  }
+
+  .box-input input{
+    width: 300px;
+  }
+
+  .logo{
+    width: 280px;
+    height: 70px;
+  }
+}

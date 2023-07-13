@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cadastropet.css">
+  <title>Cadastro - ControlPet</title>
+  <link rel="shortcut icon" href="/Imagens/Icones/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+  <div class="content">
+    <div class="box-cadastro">
+      <div class="cadastro">
+        <div class="conteudo">
+          <div class="form">
+            <div class="infos-pet">
+              <h2>Informações sobre seu pet</h2>
+              <hr>
+              <div class="nome">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Nome do seu bichinho" required>
+              </div>
+              <div class="tipo-raca"> <!-- Mesma linha -->
+                <div class="tipo-pet">
+                  <label for="cpf">Tipo de pet</label>
+                  <input type="text" id="cpf" maxlength="15" placeholder="Cachorro" required> 
+                </div>
+                <div class="raca">
+                  <label for="raca">Raça</label>
+                  <input type="text" name="raca" id="raca" required placeholder="Vira-lata">
+                </div>
+              </div>
+              <div class="lala">
+              <div class="genero">
+                <label for="genero">Gênero</label>
+                <div>
+                  <input type="radio" id="macho" name="genero" value="m">
+                  <label for="macho">Macho</label>
+                </div>
+                <div>
+                  <input type="radio" id="femea" name="genero" value="f">
+                  <label for="femea">Fêmea</label>
+                </div>
+              </div>
+              <div>
+                <form class="botao" action="/upload" method="post">
+                  <label for="file-upload" class="upload-label">Selecionar Foto</label>
+                  <input id="file-upload" class="upload-input" type="file" name="photo" accept="image/*">
+                </form>
+              </div>
+            </div>
+              <div class="identificacao">
+                <label for="identificacao">Numero de identificação</label>
+                <input type="number" name="identificacao" id="identificacao" placeholder="1234567890">
+              </div>
+              <div class="comportamento">
+                <label for="comportamento">Comportamento</label>
+                <input type="text" name="comportamento" id="comportamento" placeholder="Amigável, tímido, agressivo, etc.">
+              </div>
+              <div class="obs">
+                <label for="obs">Observações gerais</label>
+                <textarea name="obs" id="obs" cols="30" rows="3" placeholder="Medicamentos, comandos, etc." wrap=""></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="link">
+            <a href="../escolha-pet/escolha.html" class="btn-link">
+              <button class="btn">Finalizar cadastro</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="foto">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

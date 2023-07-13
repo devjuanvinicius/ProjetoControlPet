@@ -1,0 +1,37 @@
+body{
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+    
+  }
+  
+  .avo{
+    position: absolute;
+    background-color: rgb(223, 101, 56);
+    width: 90%;
+    height: 900px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+     
+    
+  }
+  p{
+    font-size: 20pt;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+
+  
+
+  
+  
+  
+  
+  

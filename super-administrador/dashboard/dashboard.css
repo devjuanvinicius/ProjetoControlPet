@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  font-size: 100%;
+  background-color: #171418;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+.superior{
+  width: 100vw;
+  display: flex;
+}
+
+/* Perfil */
+
+.perfil{
+  width: 27%;
+  height: 400px;
+  background-color: #ED6515;
+  border-radius: 20px;
+  margin: 30px 0 0 40px; 
+  display: flex;
+  flex-direction: column;
+}
+
+.pet{
+  display: flex;
+  margin-left: 25px;
+  align-items: center;
+}
+
+.img{
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
+  border: 2px solid #EAE2B7;
+  background-image: url(imagens/petshop8.jpeg);
+  background-position: center right;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.infos h1{
+  margin-top: 15px;
+  color: #EAE2B7;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.infos{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.phone, .email{
+  display: flex;
+  justify-content: center;
+  color: #EAE2B7;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.phone{
+  margin: 20px 0;
+}
+
+.phone img{
+  width: 25px;
+  height: 25px;
+}
+
+.email img{
+  width: 25px;
+  height: 25px;
+}
+
+.infos a:hover{
+  text-decoration: underline;
+}
+
+.status{
+  width: 90%;
+  height: 35%;
+  background-color: #EAE2B7;
+  border-radius: 20px;
+  margin: 35px 0 0 25px;
+  display: flex;
+  align-items: center;
+}
+
+.link-img img{
+  width: 65px;
+  height: 65px;
+  margin-left: 20px;
+}
+
+.closed{
+  color: #432818;
+  margin-left: 20px;
+}
+
+.closed h2{
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: normal;
+}
+
+/* Resumo */
+
+.resumo{
+  width: 68%;
+  height: 400px;
+  background-color: #ED6515;
+  border-radius: 20px;
+  margin: 30px 0 0 30px; 
+  display: flex;
+  justify-content: space-evenly;
+  color: #EAE2B7;
+}
+
+.resumo hr{ 
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 2px;
+  height: 80%;
+  margin-top: 30px;
+  outline: none;
+  opacity: 1;
+}
+
+.atendidos, .tma, .ativos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.atendidos h2, .tma h2, .ativos h2{
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+.atendidos p, .tma span, .ativos p{
+  font-size: 9rem;
+  font-weight: 200;
+}
+
+.tma p{
+  font-size: 2rem;
+}
+
+/* Funcionario especifico */
+
+.inferior{
+  width: 100vw;
+  display: flex;
+}
+
+.funcionarios{
+  width: 35%;
+  height: 480px;
+  background-color: #ED6515;
+  border-radius: 20px;
+  margin: 30px 0 0 40px; 
+}
+
+.carousel{
+  height: 100%;
+}
+
+.funcionario-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #EAE2B7;
+}
+
+.infos-funcionario{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.txt-ana, .txt-pedro, .txt-lucas, .txt-camila, .txt-ana-ind, .txt-camila-ind, .txt-lucas-ind, .txt-pedro-ind{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txt-ana span, .txt-lucas span{ 
+  color: #0DCAF0;
+}
+
+.txt-pedro span{ 
+  color: #FFC107;
+}
+
+.txt-camila span{
+  color: #198754;
+}
+
+.txt-ana-ind span, .txt-camila-ind span, .txt-lucas-ind span, .txt-pedro-ind span{
+  color: #DC3545;
+}
+
+.foto-funcionario-ana, .foto-funcionario-pedro, .foto-funcionario-lucas, .foto-funcionario-camila{
+  width: 150px;
+  height: 150px;
+  background-position: center center;
+  background-size: cover;
+  border: 3px solid #432818;
+  border-radius: 100px;
+  margin-top: 25px;
+}
+
+.foto-funcionario-ana{
+  background-image: url(imagens/funcionario-1.jpg);
+}
+
+.foto-funcionario-pedro{
+  background-image: url(imagens/funcionario-2.jpg);
+}
+
+.foto-funcionario-lucas{
+  background-image: url(imagens/funcionario-3.jpg);
+}
+
+.foto-funcionario-camila{
+  background-image: url(imagens/funcionario-4.jpg);
+}
+
+.resultados{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.resultados hr{
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 2px;
+  height: 200px;
+  outline: none;
+  opacity: 1;
+  margin: 0 0 15px 0;
+}
+
+.atendidos-func, .tma-func{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.atendidos-func h2, .tma-func h2{
+  font-size: 1.6rem;
+}
+
+.atendidos-func p, .tma-func span{
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+/* Metas */
+
+.metas{
+  width: 60%;
+  height: 480px;
+  background-color: #ED6515;
+  border-radius: 20px;
+  margin: 30px 0 0 30px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #EAE2B7;
+}
+
+.metas h1{ 
+  margin-top: 20px;
+}
+
+.progresso{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+}
+
+.progresso hr{ 
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 2px;
+  height: 80%;
+  margin-top: 30px;
+  outline: none;
+  opacity: 1;
+}
+
+.atendidos-prog, .tma-prog{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.atendidos-prog h2, .tma-prog h2{
+  font-size: 1.8rem;
+  margin-top: 50px;
+}
+
+.atendidos-prog h3, .tma-prog h3{
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.progress{
+  width: 80%;
+  margin-top: 10px;
+  height: 2rem;
+  border-radius: .8rem;
+}
+
+.progress-bar{
+  background-color: #432818;
+}

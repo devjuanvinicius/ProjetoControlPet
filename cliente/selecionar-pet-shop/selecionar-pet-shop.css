@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  font-size: 100%;
+  background-color: #171418;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.escolhas{
+  width: 1500px;
+  height: 800px;
+  background-color: #ED6515;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.pet-shop, .servico, .pagamento{
+  width: 33%;
+  height: 100%;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  color: #F9F8F9;
+}
+
+
+.pagamento{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagamento p{
+  margin: 325px 0 45px 0;
+  margin-top: 325px;
+}
+
+.pagamento select{
+  width: 200px;
+  height: 30px ;
+  border-radius: 10px;
+  background-color: #eae2b7;
+  color: #432818;
+  border: 2px solid #eae2b7;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.btn{
+  margin-top: 220px;
+  transition: .5s;
+}
+
+.btn button{
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: #432818;
+    color: #EAE2B7;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.97rem;
+    font-weight: 500;
+}
+
+.btn button:hover{
+  background-color: #fcaf58;
+  color: #432818;
+  font-size: 0.97rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.97rem;
+  font-weight: 500;
+}
+
+.pagamento{
+  border-radius: 30px;
+  font-size: 1.5rem;
+  background-color: #ED6515;
+}
+
+.linha-divisoria{
+  height: 100%;
+  border: 1.5px solid #E9A766;
+}
+
+@media (min-width: 1440px) and (max-width: 1500px){
+  .escolhas{
+    width: 1200px;
+    height: 750px;
+  }
+
+  .pet-shop{
+    text-align: center;
+  }
+
+  .pagamento p{
+    margin-top: 360px;
+  }
+
+  .btn{
+    margin-top: 240px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1339px){
+  .escolhas{
+    width: 900px;
+    height: 750px;
+  }
+
+  .pet-shop{
+    text-align: center;
+  }
+
+  .pagamento p{
+    margin-top: 345px;
+    text-align: center;
+  }
+
+  .btn{
+    margin-top: 180px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .escolhas{
+    width: 690px;
+    height: 750px;
+  }
+
+  .pet-shop{
+    text-align: center;
+    font-size: 1.19rem;
+  }
+
+  .pagamento p{
+    margin-top: 348px;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .servico{
+    font-size: 1.4rem;
+  }
+
+  .btn{
+    margin-top: 150px;
+  }
+
+  .btn button{
+    width: 150px;
+    height: 45px;
+  }
+}
+
+@media (min-width: 655px) and (max-width: 767px){
+  .escolhas{
+    width: 600px;
+    height: 750px;
+  }
+
+  .pet-shop{
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .pagamento p{
+    margin-top: 340px;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .pagamento select{
+    width: 150px;
+  }
+
+  .servico{
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .btn{
+    margin-top: 200px;
+  }
+
+  .btn button{
+    width: 100px;
+    height: 40px;
+  }
+
+  
+}
+
+@media (min-width: 530px) and (max-width: 654px){
+  .escolhas{
+    width: 500px;
+    height: 750px;
+  }
+
+  .pet-shop{
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .pagamento p{
+    margin-top: 340px;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .pagamento select{
+    width: 150px;
+  }
+
+  .servico{
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .btn{
+    margin-top: 200px;
+  }
+
+  .btn button{
+    width: 100px;
+    height: 40px;
+  }
+
+  
+}
+
+@media (min-width: 425px) and (max-width: 529px){
+  .escolhas{
+    width: 500px;
+    height: 750px;
+  }
+
+  .pet-shop{
+    text-align: center;
+    font-size: .7rem;
+  }
+
+  .pagamento p{
+    margin-top: 340px;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .pagamento select{
+    width: 100px;
+  }
+
+  .pagamento-resp{
+    margin-top: 25px;
+  }
+
+  .servico{
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .btn{
+    margin-top: 180px;
+  }
+
+  .btn button{
+    width: 100px;
+    height: 40px;
+  }
+
+  
+}
+
+@media (min-width: 375px) and (max-width: 424px){
+  .escolhas{
+    width: 330px;
+    height: 750px;
+  }
+
+  .pet-shop{
+    text-align: center;
+    font-size: 0.87rem;
+  }
+
+  .pagamento p{
+    margin-top: 340px;
+    text-align: center;
+    font-size: .9rem;
+  }
+
+  .pagamento select{
+    width: 90px;
+    font-size: .8rem;
+  }
+
+  .servico{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .btn{
+    margin-top: 150px;
+  }
+
+  .btn button{
+    width: 80px;
+    height: 40px;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 374px){
+  .escolhas{
+    width: 300px;
+    height: 720px;
+  }
+
+  .pet-shop{
+    text-align: center;
+    font-size: 0.87rem;
+  }
+
+  .pagamento p{
+    margin-top: 340px;
+    text-align: center;
+    font-size: .9rem;
+  }
+
+  .pagamento select{
+    width: 90px;
+    font-size: .8rem;
+  }
+
+  .servico{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .btn{
+    margin-top: 150px;
+  }
+
+  .btn button{
+    width: 80px;
+    height: 40px;
+  }
+}

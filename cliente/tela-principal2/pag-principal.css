@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  font-size: 100%;
+  background-color: #171418;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card-dados{
+  width: 1400px;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-cliente{
+  width: 50%;
+  height: 100%;
+  background-color: #ED6515;
+  border-radius: 20px 0 0 20px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-cliente h1, .card-pet h1{
+  font-size: 1.7rem;
+  margin: 20px 0 40px 0;
+  margin-top: 20px;
+  color: #fefae0;
+  font-family: 'Inter', sans-serif;
+}
+
+.img-pet{
+  width: 180px;
+  height: 180px;
+  border-radius: 110px;
+  border: 5px solid #432818;
+}
+
+
+.infos-pet, .infos-pedido{
+  width: 90%;
+  height: 200px;
+  background-color: #E9A766;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.infos-pet-shop{
+  width: 90%;
+  height: 200px;
+  background-color: #E9A766;
+  padding-top: 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.infos-pet h3, .infos-pedido h3, .infos-pet-shop h3{
+  color: #432818;
+  font-family: 'Inter', sans-serif;
+}
+
+.infos-pet p, .infos-pedido p, .infos-pet-shop p{
+  font-family: 'Inter', sans-serif;
+  color: #432818;
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card-pet{
+  width: 50%;
+  height: 100%;
+  background-color: #ED6515;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+}
+
+.btn-link{
+  margin-top: 15px; 
+}
+
+.btn-link button{
+  background-color: #309853;
+  color: #fefae0;
+  width: 130px;
+  height: 40px;
+  outline: none;
+  border: 0;
+  border-radius: 10px;
+  font-size: .95rem;
+  cursor: pointer;
+}
+
+.maps{
+  height: 200px;
+  margin-top: 20px;
+}
+
+.maps iframe{
+  border-radius: 20px;
+}
+
+.linha-divisoria{
+  height: 100%;
+  border: 2px solid #E9A766;
+}
+
+
+@media (min-width: 1440px) and (max-width: 1500px){
+  .card-dados{
+    width: 1300px;
+    height: 800px;
+  }
+
+  .maps iframe{
+    border-radius: 20px;
+    width:580px; 
+    height:200px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1339px){
+  .card-dados{
+    width: 950px;
+    height: 800px;
+  }
+
+  .maps{
+    margin-top: 45px;
+  }
+
+  .maps iframe{
+    border-radius: 20px;
+    width:427px; 
+    height:200px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .card-dados{
+    width: 690px;
+    height: 800px;
+  }
+
+  .infos-pet p, .infos-pedido p, .infos-pet-shop p{
+    font-family: 'Inter', sans-serif;
+    color: #432818;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: .9rem;
+  }
+
+  .maps{
+    margin-top: 55px;
+  }
+
+  .maps iframe{
+    border-radius: 20px;
+    width:310px; 
+    height:200px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 767px){
+  .card-dados{
+    width: 600px;
+    height: 820px;
+  }
+
+  .infos-pet p, .infos-pedido p, .infos-pet-shop p{
+    font-family: 'Inter', sans-serif;
+    color: #432818;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: .8rem;
+  }
+
+  .maps{
+    margin-top: 40px;
+  }
+
+  .maps iframe{
+    border-radius: 20px;
+    width:270px; 
+    height:200px;
+  }
+
+  .card-pet{
+    text-align: center;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 600px){
+  .card-dados{
+    width: 375px;
+    height: 800px;
+  }
+
+  .infos-pet-shop{
+    margin-top: 35px;
+  }
+
+  .infos-pet p, .infos-pet-shop p{
+    font-family: 'Inter', sans-serif;
+    color: #432818;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: .67rem;
+  }
+
+  .infos-pedido p{
+    font-family: 'Inter', sans-serif;
+    color: #432818;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: .5rem;
+  }
+
+  .infos-pet h3, .infos-pet-shop h3{
+    font-size: .8rem;
+  }
+
+  .infos-pedido h3{
+    font-size: .7rem;
+  }
+
+  .card-cliente h1{
+    font-size: 1.1rem;
+  }
+
+  .card-pet h1{
+    font-size: 1rem;
+  } 
+
+  .maps{
+    margin-top: 50px;
+  }
+
+  .maps iframe{
+    border-radius: 20px;
+    width:168px; 
+    height:200px;
+  }
+
+  .card-pet{
+    text-align: center;
+  }
+}

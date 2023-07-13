@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="excluir-pet.css">
+    <title>Excluir pet - ControlPet</title>
+</head>
+<body>
+    <div class="content">
+      <div class="box-cadastro">
+        <div class="cadastro">
+          <div class="conteudo">
+            <div class="form">
+              <div class="infos-pet">
+                <h2>Exclusão do pet</h2>
+                <hr>
+                <div class="nome">
+                  <label for="nome">Qual pet deseja excluir?</label>
+                  <select name="escolha" id="nome">
+                    <option value="osvaldo">Osvaldo</option>
+                    <option value="claudio">Claudio</option>
+                  </select>
+                </div>
+                <div class="tipo-raca"> <!-- Mesma linha -->
+                  <div class="tipo-pet">
+                    <label for="comportamento">Motivo do da retirada do pet</label>
+                    <input type="text" name="comportamento" id="comportamento" placeholder="Escreva o motivo de estar retirando o seu pet .">
+                  </div>
+                </div>
+                <div class="genero">
+                  <label for="genero">Você recomendaria o ControlPet para um amigo?</label>
+                  <div>
+                    <input type="radio" id="macho" name="genero" value="m">
+                    <label for="macho">Sim</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="femea" name="genero" value="f">
+                    <label for="femea">Não</label>
+                  </div>
+                </div>
+                <div class="identificacao">
+                  <label for="identificacao">Numero de identificação</label>
+                  <input type="number" name="identificacao" id="identificacao" placeholder="1234567890">
+                </div>
+                <div class="comportamento">
+                  
+                </div>
+                <div class="obs">
+                  <label for="obs">Observações gerais</label>
+                  <textarea name="obs" id="obs" cols="30" rows="3" placeholder="escreva sua experiencia com nosso aplicativo." wrap=""></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="link">
+              <a href="../escolha-pet(geremias-excuido)/escolha-pet(geremias-excluido).html" class="btn-link">
+                <button class="btn">Excluir pet</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="foto">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

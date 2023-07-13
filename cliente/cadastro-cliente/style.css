@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  font-size: 100%;
+  background-color: #171418;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+.box-cadastro{
+  width: 1300px;
+  height: 800px;
+  background-color: #ED6515;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cadastro{
+  width: 60%;
+  height: 100%;
+}
+
+.foto{
+  width: 40%;
+  height: 100%;
+}
+
+.conteudo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form{
+  width: 90%;
+  height: 650px;
+  color: #fefae0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Infos cliente */
+
+.infos-cliente{
+  margin-top: 45px;
+}
+
+.infos-cliente h2{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.infos-cliente hr{
+  border-color: #432818;
+}
+
+.nome{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.nome label{
+  font-size: 1.1rem;
+  margin: 3px 0 5px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.nome input{
+  padding: 7px 5px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid #432818;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.nome input::-webkit-input-placeholder{
+  font-size: .9rem;
+  margin-left: 3px;
+}
+
+.cpf-data{
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.cpf, .data-nascimento{
+  display: flex;
+  flex-direction: column;
+}
+
+.cpf{
+  width: 70%;
+}
+
+.cpf label{
+  font-size: 1.1rem;
+  margin: 3px 0 5px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.cpf input{
+  padding: 7px 5px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid #432818;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  transition: .2s ease-in-out;
+}
+
+.data-nascimento{
+  width: 40%;
+  margin-left: 20px;
+}
+
+.data-nascimento label{
+  font-size: 1.1rem;
+  margin: 2px 0 5px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.data-nascimento input{
+  padding: 7px 5px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid #432818;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.email{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.email label{
+  font-size: 1.1rem;
+  margin: 3px 0 5px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.email input{
+  padding: 7px 5px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid #432818;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.contato{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.telefone1, .telefone2{
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+
+.telefone1{
+  margin-right: 14px;
+}
+
+.telefone1 label, .telefone2 label{
+  font-size: 1.2rem;
+  margin: 3px 0 5px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.telefone1 input, .telefone2 input{
+  padding: 7px 5px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid #432818;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Localização */
+
+.localizacao{
+  margin-top: 20px;
+}
+
+.localizacao h2{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.localizacao hr{
+  border-color: #432818;
+}
+
+.divisao{
+  display: flex;
+  flex-direction: column;
+}
+
+/* parte de cima */
+
+.cima{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.rua, .numero, .complemento{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.rua{
+  width: 50%;
+}
+
+.numero{
+  width: 25%;
+  margin: 10px 7px;
+}
+
+.complemento{
+  width: 25%;
+}
+
+.rua label, .numero label, .complemento label{
+  font-size: 1.1rem;
+  margin: 3px 0 5px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.rua input, .numero input, .complemento input{
+  padding: 6px 5px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid #432818;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* parte de baixo */
+
+.baixo{
+  display: flex;
+  flex-direction: row;
+}
+
+.estado, .cidade{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  width: 50%;
+}
+
+.estado{
+  margin: 5px 5px 0 0;
+}
+
+.estado label, .cidade label{
+  font-size: 1.1rem;
+  margin: 3px 0 5px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.estado input, .cidade input{
+  padding: 7px 5px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid #432818;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Botão */
+
+.link{
+  margin-top: 63px;
+}
+
+.btn{
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  background-color: #432818;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  color: #EAE2B7;
+  font-size: .95rem;
+}
+
+.btn:hover{
+  background-color: #25140a;
+}
+
+.foto{
+  background-image: url(Imagens/backgrounds/img-cadastro2.png);
+  background-size: cover;
+  border-radius: 0 20px 20px 0;
+}
+
+::selection{
+  background-color: #25140a;
+}
+
+@media (min-width: 1024px) and (max-width: 1330px) {
+  .box-cadastro{
+    width: 950px;
+    height: 700px;
+  }
+
+  .form{
+    width: 80%;
+    height: 540px;
+  }
+
+  .infos-cliente h2{
+    font-size: 1.5rem;
+  }
+
+  .localizacao h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .nome label, .cnpj label, .data-nascimento label, .email label, .rua label, .numero label, .complemento label, .estado label, .cidade label{
+    font-size: .9rem;
+  }
+
+  .telefone1 label, .telefone2 label, .whats label{
+    font-size: 1.2rem;
+  } 
+
+  .link{
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .box-cadastro{
+    width: 650px;
+    height: 700px;
+  }
+
+  .cadastro{
+    width: 100%;
+    height: 100%;
+  }
+
+  .foto{
+    width: 0;
+    height: 0;
+    background-image: none;
+  }
+
+  .form{
+    width: 80%;
+    height: 550px;
+  }
+
+  .infos-cliente h2{
+    font-size: 1.5rem;
+  }
+
+  .localizacao h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .nome label, .cnpj label, .data-nascimento label, .email label, .rua label, .numero label, .complemento label, .estado label, .cidade label{
+    font-size: .9rem;
+  }
+
+  .telefone1 label, .telefone2 label, .whats label{
+    font-size: 1.2rem;
+  } 
+
+  .link{
+    margin-top: 90px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px){
+  .box-cadastro{
+    width: 400px;
+    height: 800px;
+  }
+
+  .cadastro{
+    width: 100%;
+    height: 100%;
+  }
+
+  .foto{
+    width: 0;
+    height: 0;
+    background-image: none;
+  }
+
+  .form{
+    width: 80%;
+    height: 650px;
+  }
+
+  .infos-cliente h2{
+    font-size: 1.3rem;
+  }
+
+  .localizacao h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .nome label, .cnpj label, .email label, .rua label, .numero label, .complemento label, .estado label, .cidade label{
+    font-size: .9rem;
+  }
+
+  .data-nascimento label{
+    font-size: .75rem
+  }
+  
+
+  .telefone1 label, .telefone2 label, .whats label{
+    font-size: 1rem;
+  } 
+
+  .link{
+    margin-top: 100px;
+  }
+
+  .cnpj{
+    width: 60%;
+  }
+
+  .data-nascimento{
+    width: 30%;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px){
+  .box-cadastro{
+    width: 350px;
+    height: 800px;
+  }
+
+  .cadastro{
+    width: 100%;
+    height: 100%;
+  }
+
+  .foto{
+    width: 0;
+    height: 0;
+    background-image: none;
+  }
+
+  .form{
+    width: 80%;
+    height: 650px;
+  }
+
+  .infos-cliente h2{
+    font-size: 1.1rem;
+  }
+
+  .localizacao h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .nome label, .cnpj label, .email label, .rua label, .numero label, .estado label, .cidade label{
+    font-size: .9rem;
+  }
+
+  .complemento label{
+    font-size: .8rem;
+  }
+
+  .data-nascimento label{
+    font-size: .7rem
+  }
+
+  .telefone1 label, .telefone2 label, .whats label{
+    font-size: 1rem;
+  } 
+
+  .link{
+    margin-top: 100px;
+  }
+
+  .cnpj{
+    width: 60%;
+  }
+
+  .data-nascimento{
+    width: 30%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px){
+  .infos-cliente h2{
+    font-size: 1.1rem;
+  }
+
+  .localizacao h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .nome label, .cnpj label, .email label, .rua label, .numero label, .estado label, .cidade label{
+    font-size: .9rem;
+  }
+
+  .complemento label{
+    font-size: .8rem;
+  }
+
+  .data-nascimento label{
+    font-size: .7rem
+  }
+
+  .telefone1 label, .telefone2 label, .whats label{
+    font-size: 1rem;
+  } 
+
+  .link{
+    margin-top: 100px;
+  }
+
+  .cnpj{
+    width: 60%;
+  }
+
+  .data-nascimento{
+    width: 30%;
+  }
+}

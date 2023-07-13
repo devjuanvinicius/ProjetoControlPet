@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="kanban-ana.css">
+  <title>Controle de pets</title>
+</head>
+<body>
+  <div class="main-box">
+    <div class="content">
+      <div class="to-do"> <!-- comeca-->
+        <p>A fazer</p>
+      </div> <!-- termina -->
+      <div class="linha-divisoria"></div>
+      <div class="progress">
+        <p>Em progresso</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="botao" data-bs-toggle="modal" data-bs-target="#geremias">
+          <img src="../imgs/download.jpg" alt="" class="foto-pet">
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="geremias" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header cor-modal txt">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Geremias</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body cor-modal txt">
+                <p>Tipo: Furão</p>
+                <p>Raça: Sable</p>
+                <p>Genero: Macho</p>
+                <p>Numero de identificação: 1234567890</p>
+                <p>Comportamento: Timido</p>
+                <p>Obs: Sem obs</p>
+                <p>Serviço contratado: Banho</p>
+              </div>
+              <div class="modal-footer cor-modal">
+                <button type="button" class="btn cor-botao" data-bs-dismiss="modal">Fechar</button>
+                <a href=""tel:+5541988915838>
+                  <button type="button" class="btn cor-botao">Finalizar</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="linha-divisoria"></div>
+      <div class="done"> <!-- comeca -->
+        <p>Feito</p>
+      </div> <!-- termina-->
+    </div>
+  </div>
+</body>
+</html>
